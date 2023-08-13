@@ -44,6 +44,7 @@ exec_always --no-startup-id /bin/bash -c 'if xrandr | grep -q "HDMI-1 connected"
 
 bindsym $mod+Shift+s exec --no-startup-id "DISPLAY=:0 scrot --select -e 'xclip -selection clipboard -t image/png -i $f'"
 
+exec --no-startup-id xinput set-prop "ASUE1200:00 04F3:30F7 Touchpad" "libinput Natural Scrolling Enabled" 1
 
 
 # Use pactl to adjust volume in PulseAudio.
